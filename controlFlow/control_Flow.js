@@ -49,3 +49,22 @@ console.log("User Category:", userCategory);
 let isAuthenticated = true;
 let authenticationStatus = isAuthenticated ? "Authenticated" : "Not authenticated";
 console.log("Authentication Status:", authenticationStatus);
+
+//assesment
+let userRole2 = prompt("Ingrese su rol en la empresa: Employee, Enrolled Member o Suscriber.");
+let dietaryService;
+
+switch(userRole2){
+    case "Employee":
+        dietaryService = "Access authorized to dietary services";
+        break;
+    case "Enrolled Member": 
+        dietaryService = "Access authorized to dietary services and one-on-one interaction with a dietician";
+        break;
+    case "Suscriber":
+        dietaryService = "Authorized to have a partial access to facilitate dietary services";
+        break;
+    default: 
+    dietaryService = "Debes enrrolarte o al menos suscribirte primero para tener servicio dietario";
+}
+console.log(dietaryService);
