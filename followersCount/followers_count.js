@@ -19,3 +19,12 @@ function checkCountValue(){
     }
 }
 
+function resetCount(){
+    if(confirm("Los seguidores se resetearan!")){
+        count = 0;
+        document.getElementById('countDisplay').innerHTML=count;
+    }
+    else{
+        alert("Usted ha cancelado el reseteo de seguidores.")
+    }
+}
